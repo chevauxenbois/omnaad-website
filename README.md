@@ -9,3 +9,11 @@ Single-page site for Omnaad Studio, an ambience design studio for restaurants, c
 ## Design
 
 Dark, Apple-like restraint: near-black #050506, text #F5F5F7, champagne gold #C9A877 as the only accent, the logo's red dot #C2262C on small markers. Inter Tight for headings, Inter for body. Logo and favicon come from the Omnaad symbol (`public/logo.svg`, `public/favicon.svg`).
+
+## Situation pages
+
+Right under the home headline are three buttons for the three most common reasons people come to Omnaad: opening a new place (`new-space-plan.html`), improving a running venue (`reach-audit.html`), and a festive setup or event (`festive-and-events.html`). Each of those pages covers the problems we solve, example ideas (marked as ideas, not past projects), common questions, and its own next step.
+
+## Welcome video
+
+There is a slot for a welcome video under the home headline, switched off with an HTML comment in `index.html`. To turn it on, add `welcome.mp4` and a still image `welcome.jpg` to `public/`, then remove the comment markers around the video block.

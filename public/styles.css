@@ -40,7 +40,7 @@ section+section{border-top:1px solid var(--line)}
 @media (max-width:900px){.nav ul{display:none}}
 
 /* hero */
-.hero{position:relative;overflow:hidden;padding-block:clamp(110px,16vw,200px) clamp(90px,12vw,150px)}
+.hero{position:relative;overflow:hidden;padding-block:clamp(64px,8vw,112px) clamp(72px,9vw,120px)}
 .hero::before{content:"";position:absolute;width:900px;height:900px;right:-300px;top:-320px;background:radial-gradient(circle,rgba(201,168,119,.26),rgba(201,168,119,0) 62%);pointer-events:none}
 .hero .wrap{position:relative}
 .hero h1{max-width:11ch}
@@ -287,3 +287,34 @@ section.tiles+section{border-top:0}
 @media (max-width:900px){.mnav{display:block;margin-left:auto}}
 @media (max-width:520px){.nav .cta-long{display:none}.nav .cta-short{display:inline}}
 .nav .mnav ul{gap:2px;display:grid}
+
+/* situation paths under the hero */
+.ask{margin-top:56px;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}
+@media (max-width:900px){.paths{grid-template-columns:1fr}}
+.path{display:flex;flex-direction:column;gap:10px;padding:28px 28px 24px;border-radius:24px;background:rgba(255,255,255,.035);border:1px solid var(--line);text-decoration:none;transition:border-color .2s,background .2s,transform .2s;min-height:190px}
+.path:hover{border-color:rgba(201,168,119,.55);background:rgba(201,168,119,.07);transform:translateY(-2px)}
+.path .k{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.path b{font-family:var(--display);font-size:clamp(21px,2vw,25px);font-weight:600;letter-spacing:-.02em;line-height:1.2}
+.path em{font-style:normal;color:var(--gold-hi);font-size:15px;margin-top:auto}
+.video{margin-top:40px;border-radius:24px;overflow:hidden;border:1px solid var(--line);aspect-ratio:16/9;max-width:880px;background:var(--raise)}
+.video video{width:100%;height:100%;object-fit:cover;display:block}
+
+/* examples */
+.examples{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:56px}
+@media (max-width:900px){.examples{grid-template-columns:1fr}}
+.example{padding:32px 30px;border-radius:24px;background:var(--raise);border:1px solid var(--line);display:flex;flex-direction:column;gap:12px}
+.example .where{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.example p{color:var(--muted);font-size:16px}
+.note{margin-top:20px;font-size:14px;color:#6E6E73}
+
+/* faq */
+.faqwrap{display:grid;grid-template-columns:4fr 7fr;gap:clamp(32px,6vw,88px);align-items:start}
+@media (max-width:900px){.faqwrap{grid-template-columns:1fr}}
+.faq{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:24px 0;font-family:var(--display);font-size:clamp(19px,1.9vw,22px);font-weight:500;letter-spacing:-.015em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--gold);font-weight:300;font-size:26px;line-height:1;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{color:var(--muted);font-size:16.5px;padding:0 40px 26px 0;max-width:62ch}
