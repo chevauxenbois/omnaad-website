@@ -318,3 +318,14 @@ section.tiles+section{border-top:0}
 .faq summary::after{content:"+";color:var(--gold);font-weight:300;font-size:26px;line-height:1;transition:transform .2s}
 .faq details[open] summary::after{transform:rotate(45deg)}
 .faq details p{color:var(--muted);font-size:16.5px;padding:0 40px 26px 0;max-width:62ch}
+
+/* where are you today: its own section */
+section.where{padding-block:clamp(24px,4vw,48px) clamp(40px,6vw,72px);border-top:0}
+.where-panel{border-radius:32px;border:1px solid rgba(201,168,119,.28);background:radial-gradient(ellipse at 50% -10%,rgba(201,168,119,.20),rgba(201,168,119,0) 60%),var(--raise);padding:clamp(48px,7vw,96px) clamp(22px,5vw,64px);text-align:center;display:flex;flex-direction:column;align-items:center}
+.where-panel h2{margin:0 auto;max-width:none}
+.where-panel .lede{text-align:center;max-width:52ch}
+.where-panel .paths{margin-top:48px;width:100%;text-align:left}
+.hero{padding-bottom:clamp(48px,6vw,80px)}
+section.where{padding-block:0 0}
+section.where .wrap{max-width:none;padding-left:max(14px, env(safe-area-inset-left,0px));padding-right:max(14px, env(safe-area-inset-right,0px))}
+section.where .paths{max-width:1100px}
