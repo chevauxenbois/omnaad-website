@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "omnaad-website",
+  "compatibility_date": "2026-11-01",
+  // Only the public/ folder is published.
+  "assets": {
+    "directory": "./public"
+  },
+  "workers_dev": true,
+  "preview_urls": false
+}
